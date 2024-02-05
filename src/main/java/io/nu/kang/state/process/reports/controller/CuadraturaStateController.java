@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1/kang/ordenes/status")
+@RequestMapping("/v1/kang/cuadratura-process/log")
 public class CuadraturaStateController {
     private final CuadraturaState cuadraturaState;
 
@@ -18,7 +18,7 @@ public class CuadraturaStateController {
 
     @GetMapping("/{xFlowId}")
     public List<CuadraturaStateData> getStateByProcessId(@PathVariable String  xFlowId){
-        return cuadraturaState.getStateByProcessId(xFlowId);
+        return cuadraturaState.getStateByxFlowId(xFlowId);
 
     }
 
