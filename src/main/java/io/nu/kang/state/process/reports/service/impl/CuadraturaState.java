@@ -9,7 +9,8 @@ import java.util.List;
 
 public interface CuadraturaState {
 
-    public List<CuadraturaStateData> getStateByProcessId(String processId);
+    List<CuadraturaStateData> getStateByxFlowId(String xFlowId);
+
     public CuadraturaStateData saveState(StateRequest request);
 
 }

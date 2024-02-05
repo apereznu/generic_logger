@@ -18,7 +18,7 @@ public class CuadraturaStateImpl implements CuadraturaState{
     }
 
     @Override
-    public List<CuadraturaStateData> getStateByProcessId(String xFlowId) {
+    public List<CuadraturaStateData> getStateByxFlowId(String xFlowId) {
         return cuadraturaStateRepository.findByxFlowId(xFlowId);
     }
 
